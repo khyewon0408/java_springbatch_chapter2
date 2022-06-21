@@ -7,10 +7,11 @@ public class orderTest {
 		
 		tomas.height =180;
 		tomas.weight =78;
-		tomas.sex = "남성";
+		tomas.gender = "남성";
 		tomas.name = "Tomas";
 		tomas.age = 37;
-		//System.out.println(tomas.humanInfo());
+		
+		tomas.showHumanInfo();
 		
 		
 		orderInfo order = new orderInfo();
@@ -23,8 +24,7 @@ public class orderTest {
 		order.price =35000 ;
 		order.menuNumber= "0003";
 		
-		System.out.println(order.showOrderInfo("202011020003","01023450001",
-				"서울시 강남구 역삼동 111-333","20201102","130258",35000,"0003"));
+		order.showOrderInfo();
 	}
 
 }

@@ -4,24 +4,14 @@ public class humanInfo {
 
 	public int height ;
 	public int weight ;
-	public String sex ;
+	public String gender ;
 	public String name ;
 	public int age ;
 
-	public humanInfo() {}
 	
-	public humanInfo(int height,int weight,String sex,String name,int age) {
-		
-		this.height = height;
-		this.weight = weight;
-		this.sex =sex;
-		this.name =name;
-		this.age =age;
-		
-	}
 	
-	public String showHumanInfo(int heigt,int weight,String sex,String name,int age){
-		return "키: "+heigt+"/n 몸무게: "+weight +"/n 성별: "+sex
-				          +"/n 이름: "+name +"/n 나이: "+age; 
+	public void showHumanInfo(){
+		System.out.println("키가 " + height + "이고, 몸무게가 " + weight + "킬로인 "+ gender + "이 있습니다.");
+		System.out.println("이름은 " + name + "이고, 나이는 " + age + "세입니다" );
 	}
 }
